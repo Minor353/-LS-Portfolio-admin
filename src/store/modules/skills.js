@@ -18,12 +18,12 @@ const skills = {
   actions: {
     fetchSkills({ state }) {
       fetch("/src/data.json")
-        .then(data => {
-          return data.json();
-        })
-        .then(responce => {
-          state.data = responce
-        });
+      .then(data => {
+        return data.json();
+      })
+      .then(responce => {
+        state.data = responce
+      });
     }
   }
 };
